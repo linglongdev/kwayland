@@ -17,8 +17,6 @@ depends:
   version: 5.11.3
 - id: qtwayland
   version: 5.15.1.7
-- id: kwayland
-  version: 5.54.0
 
 variables:
   extra_args: |
