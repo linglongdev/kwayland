@@ -11,22 +11,21 @@ base:
   version: 23.0.0
 
 depends:
-- id: qtbase
-  version: 5.11.3.15
-- id: qttools
-  version: 5.11.3
-- id: qtwayland
-  version: 5.15.1.7
+  - id: qtbase
+    version: 5.11.3.15
+  - id: qttools
+    version: 5.11.3
+  - id: qtwayland
+    version: 5.15.1.7
 
 variables:
   extra_args: |
     -DBUILD_TESTING=OFF
 
 source:
-  kind: local
-
+  kind: git
   url: https://github.com/deepin-community/kwayland.git
-  commit: d39a73ebfdf9e6c0abf62a9e7b7291829dd7f257
-  patch: []
+  commit: b8b4233adb743468bf903b3d5d3d091364769e0e
+
 build:
   kind: cmake
